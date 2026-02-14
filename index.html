@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Special | ABU × MISKI ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- canvas-confetti for heart celebration on unlock -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body class="locked">
+
+    <!-- Terminal Lock Screen -->
+    <section class="terminal-section">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                Abu-x-Miski.exe
+            </div>
+            <p id="typewriter"></p>
+
+            <div id="input-area" class="input-area hidden">
+                <label>To ensure you're my Miski Miski, enter our zodiac signs:</label>
+                <div class="input-row">
+                    <input type="text" id="abu-zodiac" placeholder="Abu's zodiac" autocomplete="off">
+                    <input type="text" id="miski-zodiac" placeholder="Miski's zodiac" autocomplete="off">
+                </div>
+                <button id="submit-btn">Grant Access</button>
+                <p id="checking-msg" class="checking hidden">Checking database...</p>
+            </div>
+        </div>
+
+        <div class="scroll-hint">↓ scroll down for the surprise ↓</div>
+    </section>
+
+    <!-- Main Content – Unlocked after correct zodiac -->
+    <section class="timeline-section">
+        <h2 class="title">Our Journey So Far ❤️</h2>
+
+        <!-- Intro Portraits -->
+        <div class="portraits-intro">
+            <div class="portrait-container">
+                <img src="https://i.ibb.co/SDC7RGLF/20260120-112311.jpg" 
+                     alt="Abu portrait" class="portrait-img" loading="lazy">
+                <p class="portrait-name">Abu</p>
+            </div>
+            <div class="heart-center">❤️</div>
+            <div class="portrait-container">
+                <img src="https://i.ibb.co/27x8WZpd/IMG-20260103-WA0096.jpg" 
+                     alt="Miski portrait" class="portrait-img" loading="lazy">
+                <p class="portrait-name">Miski Miski 🥰</p>
+            </div>
+        </div>
+
+        <!-- Late Night Calls -->
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>Late Night Calls & Vibes</h3>
+                <p>Those endless calls till morning... talking about everything & nothing. My favorite part of every day with you.</p>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/r2nCZwgb/img-1771031257089.jpg" alt="Call screenshot" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/RkRKwXmw/Screenshot-20260214-020221.jpg" alt="Call info" class="timeline-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Memories Shared -->
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>Beautiful Memories We Shared</h3>
+                <p>Every laugh, every look, every stolen moment... you make my world so much brighter, Miski.</p>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/Xr5bsSVc/frame-2-jpg.png" alt="Memory frame" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/0VpK6wVV/IMG-0456.jpg" alt="Shared moment" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/FLqHRk7c/IMG-20260120-WA0065.jpg" alt="Memory" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/hR1swjQ0/frame-17-jpg.png" alt="Frame memory" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/LdsnMJnx/frame-11-jpg.png" alt="Another memory" class="timeline-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Us Now -->
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>Us Right Now</h3>
+                <p>Still falling for you harder every single day. You're my forever person, Miski Miski.</p>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/LzqcmFzX/8bfffa218be5ae3bef8d5daa71d5844e-0.webp" alt="Us now" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/Ps1knp6K/IMG-20250916-WA0367.jpg" alt="Recent us" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/vCs4PXqT/frame-1-jpg.png" alt="Frame us" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/TM4nkdCF/IMG-3795.jpg" alt="Current moment" class="timeline-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Lovey Dovey + Goofy Moments -->
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>Lovey Dovey + Goofy Moments</h3>
+                <p>From sweet kisses to silly little fights... every second with you is perfect chaos I never want to end.</p>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/whcK5g33/Screenshot-20260214-021844.png" alt="Lovey dovey moment" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/Hf1LnGkG/Screenshot-20260214-021640.png" alt="Little fight vibe" class="timeline-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- More Gallery -->
+        <div class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>More of Our Magic</h3>
+                <!-- Heartfelt love message -->
+<div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+        <h3>To My Dearest Miskeeyah</h3>
+        <p class="love-letter">
+           Loving you has become the gentlest, most peaceful rhythm of my entire life.<br><br>
+           Why would I save my heart for only one day in February when I want to love you fiercely, quietly, completely — every single sunrise and every single midnight?<br><br>
+           Through chaos, distance, doubts, and every storm we faced… we chose each other again and again.<br>
+           Let’s never stop choosing. Forever starts with us, right here, right now. ❤️
+        </p>
+    </div>
+</div>
+</div>
+<!-- Flirty & intimacy part -->
+<div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+        <h3>Counting Down the Moments</h3>
+        <p class="love-letter">
+            I miss your lips so much — those soft kisses, the little smoochy attacks when you’re being extra naughty, and the way we just melt into long cuddles 🥺<br><br>
+            I can’t wait to have you in my arms again… to feel your heartbeat against mine, to steal kisses whenever I want, and to hold you so tight like the world doesn’t exist outside of us. Soon, my love. Very soon. 😘
+        </p>
+</div>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/NgX2Sd8y/frame-4-jpg-1.png" alt="Extra memory 1" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/zTryMD3C/frame-10-jpg.png" alt="Extra memory 2" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/tTyMtQn1/frame-22-jpg.png" alt="Extra memory 3" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/Mk5pMkLw/IMG-0410.jpg" alt="Extra memory 4" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/gb6CdtN1/IMG-20251110-WA0224.jpg" alt="Extra memory 5" class="timeline-image" loading="lazy">
+                    <img src="https://i.ibb.co/4ZRqMXSY/IMG-20251110-WA0141.jpg" alt="Extra memory 6" class="timeline-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="final-wish">
+            <h1>Happy Valentine's Day, My Beloved Miski Miski 🥰</h1>
+            <p>Forever yours, Abu ❤️<br>Thank you for choosing me every day.</p>
+        </div>
+    </section>
+     <!-- Background music -->
+<audio id="bg-music" loop>
+    <source src="http://tmpfiles.org/dl/24092344/you.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Music play/pause button - appears after unlock -->
+<div id="music-controls" class="music-controls hidden">
+    <button id="music-toggle">Play ♡</button>
+</div>
+
+<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
