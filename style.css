@@ -301,6 +301,7 @@ input[type="text"]:focus {
 }
 /* Love letter paragraphs */
 .love-letter {
+   .love-letter {
     font-size: 1.15rem;
     color: #ffccff;
     background: rgba(80, 30, 90, 0.25);
@@ -309,9 +310,18 @@ input[type="text"]:focus {
     border: 1px dashed #ff88cc;
     margin-top: 16px;
     line-height: 1.7;
-    font-style: italic;
+    /* Fixes: allow words to break and wrap properly on narrow screens */
+    word-break: break-word;        /* Primary fix: break long words when needed */
+    overflow-wrap: break-word;     /* Modern/standard name for word-wrap */
+    hyphens: auto;                 /* Optional: adds hyphens if browser supports */
+    white-space: normal;           /* Ensures normal wrapping (not pre or nowrap) */
 }
 
-.love-letter br {
-    margin-bottom: 10px;
+/* Extra safety for very narrow screens (mobile) */
+@media (max-width: 480px) {
+    .love-letter {
+        font-size: 1rem;           /* Slightly smaller text if needed */
+        padding: 16px;             /* Less padding to give more room */
+        word-break: break-all;     /* Stronger break if break-word isn't enough */
+    }
 }
